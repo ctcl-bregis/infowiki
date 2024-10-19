@@ -1,0 +1,10 @@
+{
+    "bindip": "0.0.0.0",
+    "bindport": 8000,
+    "sitename": "TestWiki",
+    "siteurl": "127.0.0.1",
+    "cache": {
+        "type": "none"
+    },
+    "dburl": ":memory:"
+}
