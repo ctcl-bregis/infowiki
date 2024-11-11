@@ -1,1 +1,9 @@
+# Python
+__pycache__
+venv/
+*.cpy
+
 /target
+# SQL is generated from JSON files
+*.sql
+

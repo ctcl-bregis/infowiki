@@ -1,0 +1,3 @@
+flask
+git+https://github.com/ctcl-bregis/lysine.git#subdirectory=py
+pydantic

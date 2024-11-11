@@ -1,5 +1,5 @@
 # NetWiki
-NetWiki is a plain and basic web-based wiki software.
+NetWiki is a basic web-based wiki application.
 
 ## Requirements
 NetWiki was developed with Python 3.12. 
