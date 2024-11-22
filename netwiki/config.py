@@ -1,8 +1,8 @@
 # NetWiki - CTCL 2024
-# File: /config.py
+# File: /netwiki/config.py
 # Purpose: Configuration file class module
 # Created: November 11, 2024
-# Modified: November 11, 2024
+# Modified: November 22, 2024
 
 from pydantic import BaseModel, PositiveInt, ValidationError
 from enum import Enum, IntEnum
@@ -18,8 +18,15 @@ class ConfigCacheEnum(str, Enum):
 class ConfigCache(BaseModel):
     cachetype: ConfigCacheEnum
 
+class ConfigDbTypeEnum(str, Enum):
+    mysql = "mysql"
+
 class ConfigDb(BaseModel):
-    url: str
+    dbtype: ConfigDbTypeEnum
+    server: str
+    dbname: str
+    username: str
+    password: str
 
 class Config(BaseModel):
     bindip: str
@@ -29,9 +36,9 @@ class Config(BaseModel):
     cache: ConfigCache
     db: ConfigDb
 
-def loadconfig():
+def loadconfig() -> Config | None:
     try:
-        with open("config/config.json") as f:
+        with open("config.json") as f:
             configtxt = f.read()
     except FileNotFoundError:
         logger.error("File config/config.json not found")

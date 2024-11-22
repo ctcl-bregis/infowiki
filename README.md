@@ -2,4 +2,4 @@
 NetWiki is a basic web-based wiki application.
 
 ## Requirements
-NetWiki was developed with Python 3.12. 
+Python 3.8 and later is recommended.

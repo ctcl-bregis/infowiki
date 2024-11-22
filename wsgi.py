@@ -2,7 +2,7 @@
 # File: /wsgi.py
 # Purpose: App entry point
 # Created: November 11, 2024
-# Modified: November 11, 2024
+# Modified: November 14, 2024
 
 import os
 import sys
@@ -13,12 +13,12 @@ app = create_app()
 
 if __name__ == "__main__":
     
-    if sys.argv[1]:
+    try: 
         if sys.argv[1] == "--debug":
             debug = True
         else:
             debug = False
-    else:
+    except:
         debug = False
     
     

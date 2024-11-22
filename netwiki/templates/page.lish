@@ -1,0 +1,13 @@
+{% include "_header.lish" %}
+
+<h1>{{ title }}</h1>
+<hr>
+<div class="content">
+{{ content | safe }}
+</div>
+
+
+
+
+
+{% include "_footer.lish" %}

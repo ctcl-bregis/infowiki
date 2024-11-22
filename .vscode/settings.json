@@ -2,5 +2,21 @@
     "psi-header.variables": [
         ["projectname", "NetWiki"],
         ["projectCreationYear", "2024"]
+    ],
+    "python.REPL.enableREPLSmartSend": false,
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "192.168.0.230",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "Test Server",
+            "username": "root",
+            "database": "netwiki",
+            "askForPassword": true
+        }
     ]
 }

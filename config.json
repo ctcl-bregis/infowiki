@@ -7,6 +7,10 @@
         "cachetype": "memcache"
     },
     "db": {
-        "url": "mysql://root:password@127.0.0.1:3306/netwiki/"
+        "dbtype": "mysql",
+        "server": "192.168.0.230",
+        "dbname": "netwiki",
+        "username": "root",
+        "password": "my-new-password"
     }
 }
