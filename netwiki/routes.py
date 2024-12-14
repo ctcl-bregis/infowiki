@@ -2,7 +2,7 @@
 # File: /routes.py
 # Purpose: Routes
 # Created: November 11, 2024
-# Modified: November 22, 2024
+# Modified: November 23, 2024
 
 from flask import Blueprint, redirect, current_app
 # Currently, Lysine is literally just Jinja2 under a different name
@@ -27,6 +27,7 @@ def root():
 def main(path):
     # Add trailing slash
     path += "/"
+
 
     template = env.get_template("page.lish")
 

@@ -1,14 +1,8 @@
 {% include "_header.lish" %}
+<h1>{{ title }}</h1>
+<hr>
+<textarea>
 
 
-
-<div class="content">
-
-{{}}
-</div>
-
-
-
-
-
+</textarea>
 {% include "_footer.lish" %}
